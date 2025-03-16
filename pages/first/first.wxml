@@ -1,0 +1,73 @@
+<!-- pages/index/index.wxml -->
+<view class="container" >
+
+<!-- 视频页 -->
+  <view class="video-wrapper">
+    <video class="video-item" object-fit="fill" controls="false" style="height:{{height}}px; width:{{width}}px;" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" autoplay muted bindloadedmetadata="videometa" binderror="videoErrorCallback">
+    </video>
+  </view>
+
+  <!-- 图片部分 -->
+<view class="image1-container">
+  <image src="/assets/pic/Carousel_image.jpg" mode="scaleToFill" class="custom-image1"></image>
+  <view class="text-container">
+  <text class="title">世界文化遗产·国家5A级景区</text>
+  <text class="subtitle">World Cultural Heritage - National 5A Scenery Sites</text>
+  <text class="welcome">云冈石窟欢迎您</text>
+  <text class="welcome-en">Welcome to Yungang Grottoes</text>
+</view>
+    <view class="bu1-container">
+      
+      <navigator url="" class="navbu">
+        <button class="button1" style="width: 150rpx;">景区介绍</button>
+        </navigator>
+        <navigator url="/pages/comment/comment" class="navbu">
+        <button class="button1" style="width: 150rpx;">交流互动</button>
+      </navigator>
+
+    </view>
+</view>
+  <!-- 轮播图 -->
+  <view class="swiper-wrapper" style="position: relative; left: 0rpx; ">
+
+    <swiper
+      class="swiper"
+      indicator-dots="true"
+      autoplay="true"
+      interval="3000"
+      duration="500"
+      circular="true"
+      > 
+      <swiper-item>
+        <navigator url="/pages/guide/guide" open-type="switchTab">
+          <image src="/assets/pic/Carousel_image.jpg" class="slide-image" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator url="/pages/guide/guide" open-type="switchTab">  
+          <image src="/assets/pic/pic2.jpg" class="slide-image" mode="widthFix"></image>
+         </navigator>
+      </swiper-item>
+
+    </swiper>
+  
+</view>
+
+
+    <!-- pages/index/index.wxml -->
+  <!-- 底部导航栏 -->
+  <view class="tab-bar">
+    <navigator url="/pages/first/first" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'first' ? 'active' : ''}}">首页</view>
+    </navigator>
+    <navigator url="/pages/guide/guide" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'guide' ? 'active' : ''}}">导览</view>
+    </navigator>
+    <navigator url="/pages/Buy/Buy" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'buy' ? 'active' : ''}}">购买</view>
+    </navigator>
+    <navigator url="/pages/mine/mine" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'mine' ? 'active' : ''}}">我的</view>
+    </navigator>
+  </view>
+</view>

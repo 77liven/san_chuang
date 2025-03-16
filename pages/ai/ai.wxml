@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="header">
+    <text class="title">AI助手</text>
+  </view>
+
+  <view class="preset-questions">
+    <view class="question-item" bindtap="onQuestionTap" data-question="你能帮我写代码吗？">
+      <text>你能帮我写代码吗？</text>
+      <text class="arrow">></text>
+    </view>
+    <view class="question-item" bindtap="onQuestionTap" data-question="请推荐一些学习资源">
+      <text>请推荐一些学习资源</text>
+      <text class="arrow">></text>
+    </view>
+    <view class="question-item" bindtap="onQuestionTap" data-question="今天天气怎么样">
+      <text>今天天气怎么样</text>
+      <text class="arrow">></text>
+    </view>
+  </view>
+
+  <!-- 消息区域 -->
+  <view class="message-area">
+    <view wx:for="{{messages}}" wx:key="index" class="message-item {{index % 2 === 0 ? 'user-message' : 'ai-message'}}">
+      <text>{{item}}</text>
+    </view>
+  </view>
+
+  <view class="input-area">
+    <view class="input-box">
+      <input placeholder="请输入你的问题…" disabled />
+    </view>
+    <button class="send-btn">发送</button>
+  </view>
+</view>

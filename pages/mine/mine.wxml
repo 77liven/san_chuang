@@ -1,0 +1,56 @@
+<view class="container">
+  <!-- <div class="cloud front">
+    <span class="left-front"></span>
+    <span class="right-front"></span>
+  </div>
+  <span class="sun sunshine"></span>
+  <span class="sun"></span>
+  <div class="cloud back">
+    <span class="left-back"></span>
+    <span class="right-back"></span>
+  </div>
+</div> -->
+
+<view class="content">
+    <view class="vip-section">
+      <view class="vip-title">VIP会员</view>
+      <view class="vip-buttons">
+        <button class="vip-button">定制路线</button>
+        <button class="vip-button">会员折扣</button>
+      </view>
+    </view>
+    <view class="order-section">
+      <view class="order-title">我的订单</view>
+      <view class="order-buttons">
+        <view class="order-dot"></view>
+        <view class="order-dot"></view>
+        <view class="order-dot"></view>
+        <view class="order-dot"></view>
+      </view>
+    </view>
+    <view class="travel-section">
+      <view class="travel-title">亮亮小客服</view>
+      <view class="travel-buttons">
+        <view class="travel-dot"></view>
+        <view class="travel-dot"></view>
+        <view class="travel-dot"></view>
+        <view class="travel-dot"></view>
+      </view>
+    </view>
+  </view>把代码改成适合于微信小程序的
+<!-- 底部导航栏 -->
+<view class="tab-bar">
+    <navigator url="/pages/first/first" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'first' ? 'active' : ''}}">首页</view>
+    </navigator>
+    <navigator url="/pages/guide/guide" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'guide' ? 'active' : ''}}">导览</view>
+    </navigator>
+    <navigator url="/pages/Buy/Buy" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'buy' ? 'active' : ''}}">购买</view>
+    </navigator>
+    <navigator url="/pages/mine/mine" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'mine' ? 'active' : ''}}">我的</view>
+    </navigator>
+  </view>
+</view>

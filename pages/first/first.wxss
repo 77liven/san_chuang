@@ -1,0 +1,170 @@
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  background-color: rgb(253, 240, 217); 
+  /* background-color: rgb(255, 0, 0);  */
+  overflow: auto;
+}
+
+.image1-container{
+  object-fit: fill;
+  background-color: transparent;
+  width: 100%;
+  height: 900rpx; /* 离顶高度 */
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.custom-image1{
+
+  width: 90%;
+  border-radius: 40rpx; /* 设置四角圆角，值可调整 */
+  overflow: hidden; /* 隐藏超出圆角的部分 */
+  height: 380rpx;
+  margin-top: 10rpx;
+}
+.bu1-container{
+  position: absolute;
+  /* background-color: rgb(139, 64, 224); */
+  width: 100%;
+  height: 200rpx; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250rpx;
+}
+.navbu{
+
+  /* background-color: violet; */
+  width: 100%;
+  gap:80rpx;
+}
+.swiper .wx-swiper-dot {
+  width: 16rpx; /* 初始宽度 */
+  height: 8rpx;
+  background-color: #cccccc; /* 正常状态颜色 */
+  border-radius: 8rpx; /* 初始圆角 */
+  transition: all 0.3s ease; /* 添加过渡效果，0.3秒，ease曲线 */
+}
+
+.swiper .wx-swiper-dot-active {
+  width: 30rpx; /* 激活宽度 */
+  border-radius: 10rpx; /* 激活圆角 */
+  background-color: #007AFF; /* 激活颜色 */
+  transition: all 0.3s ease; /* 确保激活状态也有过渡 */
+}
+.button1{
+  background-color: rgba(255, 255, 255, 0.8);  
+  height: 150rpx;
+}
+.video-wrapper {
+  width: 100%;
+  position: relative;
+  /* 通过padding-top实现16:9比例（按需修改） */
+  padding-top: 0%; 
+}
+.video-item {
+  width: 100%; 
+  background-color: rgb(0, 0, 0) ; /* 确保背景透明，视频内容优先 */
+  mask-image: linear-gradient(to bottom, rgb(255, 255, 255)40%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+}
+.swiper-wrapper{
+  width: 100%;
+  height: 100%;
+  padding-top: 10rpx;
+  margin-top:0rpx;
+  position: relative;
+
+  background-color: transparent;
+  padding-top: 0rpx;
+  box-sizing: border-box; /* 包含 padding 在高度内 */
+  display: flex;
+  justify-content: center;
+
+}
+.swiper {
+  width: 90%;
+  height: 250rpx; /* 轮播图的高度 */
+  position: relative; /* 使轮播图按顺序排列在视频下方 */
+  margin-top: 0; /* 去掉原来的 margin-top 设置 */
+  padding-top: 0rpx; /* 设置轮播图距离视频的间距 */
+  /* z-index: 1; 确保轮播图在视频的下方 */
+  border-radius: 40rpx; /* 设置四角圆角，值可调整 */
+  overflow: hidden; /* 隐藏超出圆角的部分 */
+  margin-top: 30rpx;
+
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+/* 字体 */
+
+.text-container {
+  /* background-color: violet; */
+  margin-top: 60rpx;
+  position: absolute;
+ 
+  width: 90% ;
+}
+
+.title {
+  font-size: 28rpx; /* 中等字体大小 */
+  font-weight: bold; /* 粗体，模仿中文 */
+  display: flex; /* 块级元素，换行 */
+  margin-bottom: 10rpx; /* 下边距 */
+}
+
+.subtitle {
+  font-size: 28rpx; /* 稍小字体 */
+  font-weight: normal; /* 常规字体，模仿英文 */
+  display: block; /* 块级元素，换行 */
+  margin-bottom: 20rpx; /* 下边距 */
+}
+
+.welcome {
+  font-size: 40rpx; /* 稍大字体 */
+  font-weight: bold; /* 粗体 */
+  display: block; /* 块级元素 */
+}
+
+.welcome-en {
+  font-size: 32rpx; /* 稍小字体 */
+  font-weight: normal; /* 常规字体 */
+  display: block; /* 块级元素 */
+}
+
+
+
+/* 底部导航栏样式 */
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  background: #ffffff;
+  display: flex;
+  border-top: 1rpx solid #eee;
+}
+
+.tab-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.tab-item .active {
+  color: #007AFF;
+}

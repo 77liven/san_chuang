@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="button-group">
+    <navigator url="/pages/Ticketing/Ticketing" open-type="switchTab" class="tab-item">
+
+      <view class="button-item" bind:tap="navigateToTicketing">
+      <view class="button-box">
+        <text>票务</text>
+      </view>
+    </view>
+
+    </navigator>
+    <view class="button-item" bind:tap="navigateToCcIndustries">
+      <view class="button-box">
+        <text>文创</text>
+      </view>
+    </view>
+  </view>
+  <view class="description">
+    <text>景点去有分割的票务界面与文创界面</text>
+  </view>
+<!-- -->
+
+ <!--  -->
+  <view class="content">
+    <!-- 主体内容，例如视频区域 -->
+    <!-- 如果没有内容，可以先放一个占位符 -->
+    <text>这里是内容区域</text>
+  </view>
+  <view class="tab-bar">
+    <navigator url="/pages/first/first" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'first' ? 'active' : ''}}">首页</view>
+    </navigator>
+    <navigator url="/pages/guide/guide" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'guide' ? 'active' : ''}}">导览</view>
+    </navigator>
+    <navigator url="/pages/Buy/Buy" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'buy' ? 'active' : ''}}">购买</view>
+    </navigator>
+    <navigator url="/pages/mine/mine" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'mine' ? 'active' : ''}}">我的</view>
+    </navigator>
+  </view>
+</view>

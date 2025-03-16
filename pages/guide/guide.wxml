@@ -1,0 +1,25 @@
+
+<!-- From Uiverse.io by erfangh2 --> 
+<!-- <div class="tooltip-container">
+  <span class="tooltip">Uiverse.io</span>
+  <span class="text">Tooltip 👆</span>
+  <span>Hello! 👋</span>
+</div> -->
+<image src="http://192.168.6.1:8080/download/pic/Carousel_image.jpg" mode="scaleToFill" class="custom-image1" style="position: absolute;"></image>
+
+
+  <!-- 底部导航栏 -->
+  <view class="tab-bar">
+    <navigator url="/pages/first/first" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'first' ? 'active' : ''}}">首页</view>
+    </navigator>
+    <navigator url="/pages/guide/guide" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'guide' ? 'active' : ''}}">导览</view>
+    </navigator>
+    <navigator url="/pages/Buy/Buy" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'buy' ? 'active' : ''}}">购买</view>
+    </navigator>
+    <navigator url="/pages/mine/mine" open-type="switchTab" class="tab-item">
+      <view class="{{currentTab === 'mine' ? 'active' : ''}}">我的</view>
+    </navigator>
+  </view>

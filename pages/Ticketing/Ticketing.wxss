@@ -1,0 +1,175 @@
+.container {
+  width: 100%;
+  padding: 20rpx;
+  background: rgb(255, 249, 239);
+  box-sizing: border-box;
+}
+/* 以下是最大的banner图片----------------------------------------------------------------------- */
+.banner {
+  position: relative;
+  width: 100%;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  display: flex;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.banner-info {
+  position: absolute;
+  bottom: 0; /* 文字移到图片底部 */
+  left: 20rpx;
+  background-color: violet;
+  height: 120rpx;
+  color: rgb(97, 3, 3);
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.banner-title {
+  position: relative;
+  font-size: 36rpx;
+  font-weight: bold;
+  background-color: violet;
+  /* background-color: rgba(0, 0, 0, 0.2);  */
+  /* 半透明黑色背景 */
+  height: 50rpx;
+}
+.banner-price{
+  position: absolute;
+  padding-left: 20rpx;
+  margin-left: 80rpx;
+  bottom:20rpx ;
+  background-color: rgb(2, 112, 61);
+}
+
+
+.buy-button {
+    color: #090909;
+bottom: 0;
+    height: 10rpx;
+    width: 10vw!important;
+    font-size: 10px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+  
+}
+.title {
+  width: 48%;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.1);
+}
+/* 商品展示------------------------------------------------------------------------ */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid-item {
+  width: 48%;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.1);
+}
+
+.grid-image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.grid-info {
+  padding: 10rpx;
+  text-align: center;
+}
+
+.grid-info text {
+  display: block;
+  margin: 5rpx 0;
+}
+
+.grid-score {
+  color: #888;
+  font-size: 24rpx;
+}
+
+.grid-price {
+  color: #1e90ff;
+  font-size: 28rpx;
+}
+/* 以下是 分割部分 driver */
+.divider {
+  display: flex;
+  justify-content: flex-start; /* 靠左对齐 */
+  margin: 10rpx 0;
+  padding-left: 0rpx; /* 左侧间距 */
+  width: 100%;
+}
+
+.divider-container {
+  position: relative;
+  width: 370rpx;
+  height: 150rpx;
+}
+
+.divider-image {
+  width: 370rpx;
+  height: 150rpx;
+}
+
+.divider-text {
+  position: absolute;
+  top: 50%;
+  left: 10rpx; /* 文字靠左 */
+  font-size: 28rpx;
+  color: rgb(158, 18, 18);
+}
+
+
+.divider-text::after {
+  content: ''; /* 创建一个空的伪元素 */
+  position: absolute;
+  bottom: -5rpx; /* 伪元素位于文本下方 */
+  left: 0;
+  width: 100%; /* 伪元素的宽度与文本相同 */
+  height: 40rpx; /* 设置半透明条的高度 */
+  background-color: rgba(0, 0, 0, 0.2); /* 半透明黑色背景 */
+  border-radius: 2rpx; /* 可选，设置圆角效果 */
+}
+/* 按钮测试 */
+/* From Uiverse.io by cssbuttons-io */ 
+/* From Uiverse.io by adamgiebl */ 
+.button {
+  color: #090909;
+  padding: 20rpx;
+  width: 30vw!important;
+  font-size: 14px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+}
+
+/* button:hover {
+  border: 1px solid white;
+} */
+
+/* button:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+} */
