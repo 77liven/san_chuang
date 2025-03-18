@@ -1,25 +1,25 @@
 <view class="container">
-  <view class="header">
-    <text class="title">AI助手</text>
-  </view>
 
+  <image src="http://47.104.210.167:8080/download/assets/first_background.png" class="background"></image>
+  <image src="http://47.104.210.167:8080/download/assets/ai.png" class="ai"   mode="aspectFit" style="position: absolute; left: -69rpx; top: 29rpx; width: 391rpx; height: 306rpx; display: block; box-sizing: border-box"></image>
   <view class="preset-questions">
-    <view class="question-item" bindtap="onQuestionTap" data-question="你能帮我写代码吗？">
-      <text>你能帮我写代码吗？</text>
+    <view class="question-item" bindtap="onQuestionTap" data-question="有什么推荐的景点吗">
+      <text>有什么推荐的景点吗</text>
       <text class="arrow">></text>
     </view>
-    <view class="question-item" bindtap="onQuestionTap" data-question="请推荐一些学习资源">
-      <text>请推荐一些学习资源</text>
+    <view class="question-item" bindtap="onQuestionTap" data-question="推荐哪些特色民俗活动？">
+      <text>推荐哪些特色民俗活动？</text>
       <text class="arrow">></text>
     </view>
-    <view class="question-item" bindtap="onQuestionTap" data-question="今天天气怎么样">
-      <text>今天天气怎么样</text>
+    <view class="question-item" bindtap="onQuestionTap" data-question="我想购买特色的文创产品，有推荐吗？">
+      <text>我想购买特色的文创产品，有推荐吗？</text>
       <text class="arrow">></text>
     </view>
   </view>
 
   <!-- 消息区域 -->
   <view class="message-area">
+
     <view wx:for="{{messages}}" wx:key="index" class="message-item {{index % 2 === 0 ? 'user-message' : 'ai-message'}}">
       <text>{{item}}</text>
     </view>
@@ -27,8 +27,8 @@
 
   <view class="input-area">
     <view class="input-box">
-      <input placeholder="请输入你的问题…" disabled />
+      <input placeholder="请输入你的问题…" bindinput="handleInput" value="{{inputValue}}" />
     </view>
-    <button class="send-btn">发送</button>
+    <button class="send-btn" bindtap="sendMessage">发送</button>
   </view>
 </view>

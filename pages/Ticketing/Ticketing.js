@@ -1,5 +1,3 @@
 Page({
-  data: {
-    currentTab: 'home'
-  }
-})
+  data: {}
+});

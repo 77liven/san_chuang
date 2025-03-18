@@ -1,0 +1,66 @@
+<view class="container">
+  <image src="http://47.104.210.167:8080/download/assets/first_background.png" style="z-index: -10;" class="background-1"></image>
+  <!-- 可缩放拖拽的背景图 -->
+  <movable-area class="map-area">
+    <movable-view
+      class="map-view"
+      direction="all"
+      scale="true"
+      scale-min="1"
+      scale-max="3"
+      scale-value="{{scale}}"
+      bindchange="onScaleChange">
+      <image class="background" src="{{backgroundImage}}" mode="widthFix"></image>
+    </movable-view>
+  </movable-area>
+
+  <!-- 侧边栏（默认隐藏） -->
+  <view class="sidebar" wx:if="{{showSidebar}}">
+    <view class="sidebar-item">
+      <image class="icon" src="/images/icon-scenic.png"></image>
+      <text>景点</text>
+    </view>
+    <view class="sidebar-item">
+      <image class="icon" src="/images/icon-checkin.png"></image>
+      <text>打卡点</text>
+    </view>
+    <view class="sidebar-item">
+      <image class="icon" src="/images/icon-bus.png"></image>
+      <text>公交站点</text>
+    </view>
+    <view class="sidebar-item">
+      <image class="icon" src="/images/icon-food.png"></image>
+      <text>美食</text>
+    </view>
+    <view class="sidebar-item">
+      <image class="icon" src="/images/icon-entertainment.png"></image>
+      <text>娱乐</text>
+    </view>
+    <view class="sidebar-item">
+      <image class="icon" src="/images/icon-shopping.png"></image>
+      <text>购物</text>
+    </view>
+    <view class="sidebar-item">
+      <image class="icon" src="/images/icon-hotel.png"></image>
+      <text>酒店</text>
+    </view>
+    <view class="sidebar-item">
+      <image class="icon" src="/images/icon-restroom.png"></image>
+      <text>卫生间</text>
+    </view>
+  </view>
+
+  <!-- 顶部路线选择框 -->
+  <view class="topbar">
+  <view class="topbar-item {{selectedRoute === 1 ? 'active' : ''}}" bindtap="selectRoute" data-route="1">
+    <text>路线1</text>
+  </view>
+  <view class="topbar-item {{selectedRoute === 2 ? 'active' : ''}}" bindtap="selectRoute" data-route="2">
+    <text>路线2</text>
+  </view>
+  <view class="topbar-item {{selectedRoute === 3 ? 'active' : ''}}" bindtap="selectRoute" data-route="3">
+    <text>路线3</text>
+  </view>
+</view>
+
+</view>

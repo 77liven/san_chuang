@@ -1,22 +1,37 @@
 <!-- pages/index/index.wxml -->
-<view class="container" >
+<view class="container">
 
-<!-- 视频页 -->
+          <!-- 显示轮播图详情图 -->
+ <!-- 点击缩略图时，触发 toggleImage 显示全屏 -->
+
+  
+  <!-- 全屏图片显示 -->
+  <view class="fullscreen-image" wx:if="{{isFullscreen}}" bindtap="toggleImage">
+    <image class="fullscreen" src="{{currentImage}}"></image>
+  </view>
+
+
+
+
+
+  <image src="http://47.104.210.167:8080/download/assets/first_background.png" class="background"></image>
+
+  <!-- 视频页 -->
   <view class="video-wrapper">
-    <video class="video-item" object-fit="fill" controls="false" style="height:{{height}}px; width:{{width}}px;" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" autoplay muted bindloadedmetadata="videometa" binderror="videoErrorCallback">
+    <video class="video-item" object-fit="fill" controls="false" style="height:{{height}}px; width:{{width}}px;" src="http://47.104.210.167:8080/download/assets/first.mp4" autoplay muted bindloadedmetadata="videometa" binderror="videoErrorCallback">
     </video>
   </view>
 
   <!-- 图片部分 -->
-<view class="image1-container">
-  <image src="/assets/pic/Carousel_image.jpg" mode="scaleToFill" class="custom-image1"></image>
-  <view class="text-container">
+  <view class="image1-container">
+    <image src="http://47.104.210.167:8080/download/assets/景区介绍.jpg" mode="scaleToFill" class="custom-image1"></image>
+    <!-- <view class="text-container">
   <text class="title">世界文化遗产·国家5A级景区</text>
   <text class="subtitle">World Cultural Heritage - National 5A Scenery Sites</text>
   <text class="welcome">云冈石窟欢迎您</text>
   <text class="welcome-en">Welcome to Yungang Grottoes</text>
-</view>
-    <view class="bu1-container">
+</view> -->
+    <!-- <view class="bu1-container">
       
       <navigator url="" class="navbu">
         <button class="button1" style="width: 150rpx;">景区介绍</button>
@@ -25,36 +40,42 @@
         <button class="button1" style="width: 150rpx;">交流互动</button>
       </navigator>
 
-    </view>
-</view>
+    </view> -->
+  </view>
   <!-- 轮播图 -->
+  
   <view class="swiper-wrapper" style="position: relative; left: 0rpx; ">
 
-    <swiper
-      class="swiper"
-      indicator-dots="true"
-      autoplay="true"
-      interval="3000"
-      duration="500"
-      circular="true"
-      > 
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true">
       <swiper-item>
-        <navigator url="/pages/guide/guide" open-type="switchTab">
-          <image src="/assets/pic/Carousel_image.jpg" class="slide-image" mode="widthFix"></image>
-        </navigator>
+
+          <image bindtap="toggleImage" data-src="http://47.104.210.167:8080/download/assets/轮播图跳转页面1.png" src="http://47.104.210.167:8080/download/assets/3.轮播图一.png" class="slide-image" mode="widthFix"></image>
+
+
+
       </swiper-item>
       <swiper-item>
-        <navigator url="/pages/guide/guide" open-type="switchTab">  
-          <image src="/assets/pic/pic2.jpg" class="slide-image" mode="widthFix"></image>
-         </navigator>
+
+          <image bindtap="toggleImage" data-src="http://47.104.210.167:8080/download/assets/轮播图跳转页面2.png" src="http://47.104.210.167:8080/download/assets/3.轮播图二.png" class="slide-image" mode="widthFix"></image>
+
+      </swiper-item>
+      <swiper-item>
+  
+          <image  bindtap="toggleImage" data-src="http://47.104.210.167:8080/download/assets/轮播图跳转页面3.png" src="http://47.104.210.167:8080/download/assets//3.轮播图三.png" class="slide-image" mode="widthFix"></image>
+
       </swiper-item>
 
     </swiper>
-  
-</view>
+
+  </view>
+<view class="bottom-container">
+  <navigator url="/pages/ai/ai"  class="ai-container">
+    <image src="http://47.104.210.167:8080/download/assets/ai.png" class="ai"  mode="aspectFit" ></image>
+    </navigator>
+  </view>
 
 
-    <!-- pages/index/index.wxml -->
+  <!-- pages/index/index.wxml -->
   <!-- 底部导航栏 -->
   <view class="tab-bar">
     <navigator url="/pages/first/first" open-type="switchTab" class="tab-item">

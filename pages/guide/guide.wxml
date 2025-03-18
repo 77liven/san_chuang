@@ -1,15 +1,27 @@
 
-<!-- From Uiverse.io by erfangh2 --> 
-<!-- <div class="tooltip-container">
-  <span class="tooltip">Uiverse.io</span>
-  <span class="text">Tooltip 👆</span>
-  <span>Hello! 👋</span>
-</div> -->
-<image src="http://192.168.6.1:8080/download/pic/Carousel_image.jpg" mode="scaleToFill" class="custom-image1" style="position: absolute;"></image>
+<view class="container">
+
+  <image src="http://47.104.210.167:8080/download/assets/first_background.png" class="background"></image>
+  <view class="guide_image_container">
+    <view  class="guide_image" mode="scaleToFill" ></view>
+  </view>
+ 
+
+  <view class="button-item" bind:tap="navigateToMap" style="background-color:aqua;">
+  <text>ditu</text>
+
+</view>
+<view class="button-item" bind:tap="navigateToVr" style="background-color:aqua;">
+  <text>vr</text>
+  </view>
 
 
-  <!-- 底部导航栏 -->
-  <view class="tab-bar">
+
+
+
+
+ <!-- 底部导航栏 -->
+ <view class="tab-bar">
     <navigator url="/pages/first/first" open-type="switchTab" class="tab-item">
       <view class="{{currentTab === 'first' ? 'active' : ''}}">首页</view>
     </navigator>
@@ -23,3 +35,4 @@
       <view class="{{currentTab === 'mine' ? 'active' : ''}}">我的</view>
     </navigator>
   </view>
+</view>

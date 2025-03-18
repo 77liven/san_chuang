@@ -1,76 +1,46 @@
 <view class="container">
-<!-- 最大的图 -->
-  <view class="banner">
-    <image src="/assets/pic/pic1.jpg" mode="widthFix" class="banner-image"></image>
-    <view class="banner-info">
-      <text class="banner-title">五台山-平遥古城</text>
-      <text class="banner-price"> $1200</text>
-      <!-- <view class="banner-price"> -->
-        <!-- <text style="position: relative; left: -225rpx; top: 64rpx">¥1211</text> -->
-      <button class="banner-button" style="position: relative; left: 33rpx; top: -38rpx">购买</button>
-
-      <!-- </view> -->
-    </view>
-  </view>
-<!-- 分割 -->
-  <view class="divider">
-    <view class="divider-container">
-      <image src="/assets/pic/pic2.jpg" class="divider-image"></image>
-
-
-      <text class="divider-text">热门景区</text>
-    </view>
+  <view class="header">
+    <text>特色文创 文创体验</text>
   </view>
 
-<!-- 商品展示 -->
-  <view class="grid">
-    <view class="grid-item">
-      <image src="/assets/pic/pic1.jpg" mode="widthFix" class="grid-image"></image>
-      <view class="grid-info">
-        <text>晋中市介休市张壁村...</text>
-        <text class="grid-score">张壁古堡 4A</text>
-        <text class="grid-price">¥37 起</text>
+  <view class="content">
+    <!-- 卡片1 2-->
+    <view class="card_group">
+    <view class="card" >
+      <image class="card-image" src="http://47.104.210.167:8080/download/assets/pic1.jpg"></image>
+      <text class="card-title">华清宫景区</text>
+      <view class="card-info">
+        <text class="card-price">v60起</text>
+        <text class="card-desc">评分5分</text>
       </view>
     </view>
-    <view class="grid-item">
-      <image src="/assets/pic/pic1.jpg" mode="widthFix" class="grid-image"></image>
-      <view class="grid-info">
-        <text>晋中市介休市张壁村...</text>
-        <text class="grid-score">张壁古堡 4A</text>
-        <text class="grid-price">¥37 起</text>
+
+    <!-- 卡片2 -->
+    <view class="card" >
+      <image class="card-image" src="http://47.104.210.167:8080/download/assets/pic1.jpg"></image>
+      <text class="card-title">华清宫旅游年卡</text>
+      <view class="card-info">
+        <text class="card-price">v180起</text>
+        <text class="card-desc">评分5分</text>
       </view>
     </view>
-    <view class="grid-item">
-      <image src="/assets/pic/pic1.jpg" mode="widthFix" class="grid-image"></image>
-      <view class="grid-info">
-        <text>晋中市介休市张壁村...</text>
-        <text class="grid-score">张壁古堡 4A</text>
-        <text class="grid-price">¥37 起</text>
+  </view>
+    <!-- 卡片3 4-->
+    <view class="card_group">
+    <view class="card" >
+      <image class="card-image" src="http://47.104.210.167:8080/download/assets/pic1.jpg"></image>
+      <text class="card-title">华清宫官方讲解</text>
+      <view class="card-info">
+        <text class="card-price">v499起</text>
+        <text class="card-desc">评分5分</text>
       </view>
+      
     </view>
-    <view class="grid-item">
-      <image src="/assets/pic/pic1.jpg" mode="widthFix" class="grid-image"></image>
-      <view class="grid-info">
-        <text>晋中市平遥县南照镇...</text>
-        <text class="grid-score">平遥古城 5A</text>
-        <text class="grid-price">¥123 起</text>
-      </view>
-    </view>
-    <view class="grid-item">
-      <image src="/assets/pic/pic1.jpg" mode="widthFix" class="grid-image"></image>
-      <view class="grid-info">
-        <text>山西省晋城市泽州县...</text>
-        <text class="grid-score">皇城相府 4A</text>
-        <text class="grid-price">¥37 起</text>
-      </view>
-    </view>
-    <view class="grid-item">
-      <image src="/assets/pic/pic1.jpg" mode="widthFix" class="grid-image"></image>
-      <view class="grid-info">
-        <text>山西省太原市晋祠镇...</text>
-        <text class="grid-score">晋祠庙 5A</text>
-        <text class="grid-price">¥123 起</text>
-      </view>
+
+    <!-- 卡片4 -->
+    <view class="card"  style="background-color: transparent;">
+
     </view>
   </view>
 </view>
+</view>v

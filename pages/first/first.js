@@ -27,6 +27,8 @@ Page({
     })
   },
   data: {
+    isFullscreen: false, // 控制全屏显示的状态
+    currentImage: '', // 当前显示的图片
     currentTab: 'first',
     videoList: [
       { url: 'https://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400' },
@@ -64,5 +66,30 @@ Page({
     this.setData({
       videoStatus: '播放成功'
     });
+  },
+  videoErrorCallback(e) {
+    console.error('视频播放错误：', e.detail.errMsg);
+    // 可选：显示错误提示给用户
+    wx.showToast({
+      title: '视频播放失败：' + e.detail.errMsg,
+      icon: 'none',
+      duration: 2000
+    });
+  },
+  toggleImage: function(e) {
+    const imageSrc = e.currentTarget.dataset.src;  // 获取点击的图片 URL
+    
+    if (this.data.isFullscreen) {
+      // 如果当前是全屏，点击后关闭全屏
+      this.setData({
+        isFullscreen: false,
+      });
+    } else {
+      // 如果当前不是全屏，显示指定的图片
+      this.setData({
+        isFullscreen: true,
+        currentImage: imageSrc,  // 设置为点击的图片 URL
+      });
+    }
   },
 })

@@ -1,14 +1,16 @@
 {
   "pages": [
-
     "pages/first/first",
+    "pages/route_guide/route_guide",
     "pages/ai/ai",
     "pages/guide/guide",
     "pages/Ticketing/Ticketing",
+    "pages/Ticketing copy/Ticketing",
     "pages/mine/mine",
     "pages/Buy/Buy",
     "pages/index/index",
     "pages/comment/comment",
+    "pages/vr/vr",
     "pages/logs/logs"
   ],
   "window": {

@@ -1,0 +1,79 @@
+<view class="container">
+  <!-- 顶部导航 -->
+  <!-- <view class="header">
+
+    <text class="title">VR全景</text>
+    <view class="more-btn">⋯</view>
+  </view> -->
+
+  <!-- 图片和视频区域 -->
+  <view class="content" style="height: 1122rpx; display: flex; box-sizing: border-box">
+<!-- 组1 -->
+    <!-- 图片1 -->
+<view class="item_group">
+  <view class="item"  catchtap="doNothing">
+    <image src="http://47.104.210.167:8080/download/assets/VR侍郎府.jpg" mode="aspectFit" class="image" bindtap="playVideo"></image>
+
+    <text class="caption">侍郎府</text>
+
+  <view wx:if="{{showVideo}}" class="video-wrapper">
+    <video id="myVideo" src="http://47.104.210.167:8080/download/assets/VR侍郎府.mp4" controls muted ></video>
+    <view class="close-button" bindtap="closeVideo">关闭</view>
+  </view>
+
+</view>
+
+
+    <!-- 图片2 -->
+    <view class="item"  catchtap="doNothing">
+    <image src="http://47.104.210.167:8080/download/assets/VR侍郎府.jpg" mode="aspectFit" class="image" bindtap="playVideo"></image>
+
+    <text class="caption">侍郎府</text>
+
+  <view wx:if="{{showVideo}}" class="video-wrapper">
+    <video id="myVideo" src="http://47.104.210.167:8080/download/assets/VR侍郎府.mp4" controls muted ></video>
+    <view class="close-button" bindtap="closeVideo">关闭</view>
+  </view>
+
+</view>
+</view>
+
+
+<!-- 组2 -->
+<!-- tu3 -->
+<view class="item_group">
+  <view class="item"  catchtap="doNothing">
+    <image src="http://47.104.210.167:8080/download/assets/VR侍郎府.jpg" mode="aspectFit" class="image" bindtap="playVideo"></image>
+
+    <text class="caption">侍郎府</text>
+
+  <view wx:if="{{showVideo}}" class="video-wrapper">
+    <video id="myVideo" src="http://47.104.210.167:8080/download/assets/VR侍郎府.mp4" controls muted ></video>
+    <view class="close-button" bindtap="closeVideo">关闭</view>
+  </view>
+
+</view>
+
+
+    <!-- 图片4 -->
+    <view class="item"  catchtap="doNothing">
+    <image src="http://47.104.210.167:8080/download/assets/VR侍郎府.jpg" mode="aspectFit" class="image" bindtap="playVideo"></image>
+
+    <text class="caption">侍郎府</text>
+
+  <view wx:if="{{showVideo}}" class="video-wrapper">
+    <video id="myVideo" src="http://47.104.210.167:8080/download/assets/VR侍郎府.mp4" controls muted ></video>
+    <view class="close-button" bindtap="closeVideo">关闭</view>
+  </view>
+
+</view>
+</view>
+   
+  </view>
+
+
+<view>
+
+
+</view>
+</view>
